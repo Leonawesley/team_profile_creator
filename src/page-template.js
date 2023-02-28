@@ -4,7 +4,8 @@ const generateTeam = team => {
     // creates the manager html
     const generateManager = manager => {
         return `
-        <div class="card employee-card">
+        <div class= "col p-2" >
+        <div class="card employee-card h-100" style="width: 18rem;">
         <div class="card-header">
             <h2 class="card-title">${manager.getName()}</h2>
             <h3 class="card-title"><i class="fas fa-mug-hot mr-2"></i>${manager.getRole()}</h3>
@@ -17,13 +18,15 @@ const generateTeam = team => {
             </ul>
         </div>
     </div>
+    </div>
         `;
     };
 
     // creates the html for engineers
     const generateEngineer = engineer => {
         return `
-        <div class="card employee-card">
+        <div class= "col p-2" >
+        <div class="card employee-card h-100" style="width: 18rem;">
     <div class="card-header">
         <h2 class="card-title">${engineer.getName()}</h2>
         <h3 class="card-title"><i class="fas fa-glasses mr-2"></i>${engineer.getRole()}</h3>
@@ -36,13 +39,15 @@ const generateTeam = team => {
         </ul>
     </div>
 </div>
+</div>
         `;
     };
 
     // creates the html for interns
     const generateIntern = intern => {
         return `
-        <div class="card employee-card">
+        <div class= "col p-2" >
+        <div class="card employee-card h-100" style="width: 18rem;">
     <div class="card-header">
         <h2 class="card-title">${intern.getName()}</h2>
         <h3 class="card-title"><i class="fas fa-user-graduate mr-2"></i>${intern.getRole()}</h3>
@@ -54,6 +59,7 @@ const generateTeam = team => {
             <li class="list-group-item">School: ${intern.getSchool()}</li>
         </ul>
     </div>
+</div>
 </div>
         `;
     };
@@ -106,10 +112,9 @@ module.exports = team => {
         </div>
     </div>
     <div class="container">
-        <div class="row">
-            <div class="team-area col-12 d-flex justify-content-center">
+        <div class="row row-cols-1 row-cols-md-3 g-4">
                 ${generateTeam(team)}
-            </div>
+            
         </div>
     </div>
 </body>
