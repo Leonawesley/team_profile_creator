@@ -25,7 +25,7 @@ Please refer to the license in the repo
 
 ## Credits
 
-* https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax
+* https://getbootstrap.com/docs/5.0/components/card/
 
 * https://www.npmjs.com/package//inquirer?activeTab=readme
 
